@@ -1,19 +1,43 @@
 import React from 'react'
 import { Flex, Text, Image, MenuItem, Menu, MenuButton, IconButton, MenuList, useMediaQuery } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, SearchIcon, ChevronDownIcon } from '@chakra-ui/icons'
 
 const items = ['About', 'News', 'Science', 'Resources']
 
+const NavBarItem = ({ children, ...props }) => {
+  return <Text
+    textTransform="uppercase"
+    m="0 15px"
+    cursor="pointer"
+    borderBottom="2px solid white"
+    _hover={{
+      borderBottom: '2px solid'
+    }}
+    transition="0.7s"
+    {...props}
+  >
+    {children}
+  </Text>
+}
+
 const NavBarItems = () => {
-  return items.map((text, index) => (
-    <Text
-      textTransform="uppercase"
-      m="0 15px"
-      {...(index === 0 ? {
-        marginLeft: 'auto'
-      } : {})}
-    >{text}</Text>
-  ))
+  return <>
+    {items.map((text, index) => (
+      <NavBarItem
+        {...(index === 0 ? {
+          marginLeft: 'auto'
+        } : {})}
+      >{text}</NavBarItem>
+    ))}
+
+    <NavBarItem>
+      <SearchIcon /> Search
+    </NavBarItem>
+
+    <NavBarItem>
+      EN <ChevronDownIcon />
+    </NavBarItem>
+  </>
 }
 
 const BurgerMenu = () => {
@@ -45,7 +69,7 @@ const BurgerMenu = () => {
 }
 
 const NavBar = () => {
-  const [ isMobile ] = useMediaQuery("(min-width: 1280px)")
+  const [ isMobile ] = useMediaQuery("(min-width: 1000px)")
 
   return <Flex
     m={{
