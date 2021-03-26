@@ -1,53 +1,10 @@
 import React from 'react'
 import { Flex, Heading, Text, Box, Image } from '@chakra-ui/react'
+import Video from './components/Video'
 
 const App = () => {
   return <>
-    <Image
-      src="/assets/images/logo.svg"
-      position="absolute"
-      top="40vh"
-      left="45vw"
-      width="10vw"
-      zIndex="99"
-      pointerEvents="none"
-    />
-    
-
-    <Box
-      position="absolute"
-      width="100vw"
-      height="100vh"
-      overflow="hidden"
-    >
-      <iframe
-        src="https://www.youtube.com/embed/4aXgBzFAzDk?controls=0&mute=1&autoplay=1&showinfo=0&loop=1&rel=0&playlist=4aXgBzFAzDk"
-        frameborder="0"
-        height="100vh"
-        width="100vw"
-        allowfullscreen
-        style={{
-          pointerEvents: 'none',
-          position: 'relative',
-          height: '120vh',
-          width: '140vw',
-          left: '-20vw',
-          top: '-9vw'
-        }}
-      />
-
-      <Flex justifyContent="center">
-        <Image
-          src="/assets/images/mouse.svg"
-          position="absolute"
-          bottom="5vh"
-          zIndex="99"
-          width="1vw"
-          pointerEvents="none"
-        />
-      </Flex>
-    </Box>
-    <Box height="100vh" width="100vw" />
+    <Video />
 
     <Flex
       m="0 10vw"
@@ -69,7 +26,7 @@ const App = () => {
         <Text
           textTransform="uppercase"
           m="0 15px"
-          {...(index == 0 ? {
+          {...(index === 0 ? {
             marginLeft: 'auto'
           } : {})}
         >{text}</Text>
@@ -82,7 +39,7 @@ const App = () => {
         m="10vh 0"
       >
         <Flex direction="column">
-          <Heading>Searching for the unknown.</Heading>
+          <Heading>Searching for the unknown</Heading>
           <Text>Feature <span style={{
             color: 'gray'
           }}>– 5 March 2021</span></Text>
@@ -101,6 +58,8 @@ const App = () => {
         m="2vh 0"
       >What is the nature of our universe?</Heading>
       <Image src="/assets/images/background.jpeg" />
+
+      <Heading>Explore the CERN</Heading>
     </Box>
 
     <Box
