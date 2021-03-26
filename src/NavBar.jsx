@@ -45,7 +45,7 @@ const BurgerMenu = () => {
 }
 
 const NavBar = () => {
-  const [ isMobile ] = useMediaQuery("(min-width: 1280px)")
+  const [ isMobile ] = useMediaQuery("(min-width: 1000px)")
 
   return <Flex
     m={{
