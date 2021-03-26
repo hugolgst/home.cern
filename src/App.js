@@ -62,6 +62,12 @@ const App = () => {
                 base: '2vh',
                 md: '0'
               }}
+              transition="0.7s"
+              cursor="pointer"
+              textDecoration="underline transparent"
+              _hover={{
+                textDecorationColor: 'black'
+              }}
             >Searching for the unknown</Heading>
             {isMobile ? '' : <Image
               src="/assets/images/exploring-unknown.png"
@@ -145,6 +151,12 @@ const App = () => {
             <Heading
               fontSize="1.5em"
               m="2vh 0"
+              transition="0.7s"
+              cursor="pointer"
+              textDecoration="underline transparent"
+              _hover={{
+                textDecorationColor: 'black'
+              }}
             >Take an immersive tour of CERN's accelerators</Heading>
           </Flex>
         </FadeInWhenVisible>
@@ -163,6 +175,12 @@ const App = () => {
             <Heading
               fontSize="1.5em"
               m="2vh 0"
+              transition="0.7s"
+              cursor="pointer"
+              textDecoration="underline transparent"
+              _hover={{
+                textDecorationColor: 'black'
+              }}
             >Visit CERN's permanent exhibitions</Heading>
           </Flex>
         </FadeInWhenVisible>
@@ -181,6 +199,13 @@ const App = () => {
             <Heading
               fontSize="1.5em"
               m="2vh 0"
+              transition="0.7s"
+              borderBottom="2px solid white"
+              cursor="pointer"
+              textDecoration="underline transparent"
+              _hover={{
+                textDecorationColor: 'black'
+              }}
             >Technology from CERN to society</Heading>
           </Flex>
         </FadeInWhenVisible>
