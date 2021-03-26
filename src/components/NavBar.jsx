@@ -40,7 +40,10 @@ const NavBar = () => {
   const [ isMobile ] = useMediaQuery("(min-width: 1280px)")
 
   return <Flex
-    m="0 10vw"
+    m={{
+      base: '2vh 10vw',
+      xl: '0 10vw'
+    }}
     alignItems="center"
   >
     {/* <Heading

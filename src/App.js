@@ -11,35 +11,64 @@ const App = () => {
 
     <NavBar />
 
-    <Box m="5vh 20vw">
+    <Box m={{
+      base: '5vh 10vw',
+      xl: '5vh 20vw'
+    }}>
       <Flex
         alignItems="center"
-        m="10vh 0"
+        m={{
+          base: '5vh 0',
+          xl: '10vh 0'
+        }}
         direction={{
           base: 'column',
           xl: 'row'
         }}
       >
         <Flex direction="column">
-          <Heading>Searching for the unknown</Heading>
-          <Text>Feature <span style={{
-            color: 'gray'
-          }}>– 5 March 2021</span></Text>
+          <Heading
+            marginBottom={{
+              base: '2vh',
+              xl: '0'
+            }}
+          >Searching for the unknown</Heading>
+          {isMobile ? '' : <Image
+            src="/assets/images/exploring-unknown.png"
+            w={{
+              base: '90vw',
+              xl: '18vw'
+            }}
+            marginLeft="auto"
+          />}
+          <Text
+            marginTop={{
+              base: '2vh',
+              xl: '0'
+            }}
+          >
+            Feature <span style={{
+              color: 'gray'
+            }}>– 5 March 2021</span>
+          </Text>
         </Flex>
 
-        <Image
+        {isMobile ? <Image
           src="/assets/images/exploring-unknown.png"
           w={{
-            base: '70vw',
+            base: '90vw',
             xl: '18vw'
           }}
           marginLeft="auto"
-        />
+        /> : ''}
       </Flex>
 
       <Heading
         textTransform="uppercase"
-        fontSize="3em"
+        fontSize={{
+          base: '1.6em',
+          xl: '3em'
+        }}
         m="2vh 0"
       >What is the nature of our universe?</Heading>
       <Image src="/assets/images/background.jpeg" />
