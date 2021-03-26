@@ -6,39 +6,52 @@ const App = () => {
     <Image
       src="/assets/images/logo.svg"
       position="absolute"
-      top="35vh"
+      top="40vh"
       left="45vw"
       width="10vw"
       zIndex="99"
       pointerEvents="none"
     />
     
+
     <Box
       position="absolute"
-      width="130vw"
-      height="120vh"
-      left="-15vw"
-      top="-30vh"
+      width="100vw"
+      height="100vh"
+      overflow="hidden"
     >
       <iframe
-        src="https://www.youtube.com/embed/4aXgBzFAzDk?controls=0&mute=1&autoplay=1&showinfo=0&loop=1&rel=0"
-        title="YouTube video player"
+        src="https://www.youtube.com/embed/4aXgBzFAzDk?controls=0&mute=1&autoplay=1&showinfo=0&loop=1&rel=0&playlist=4aXgBzFAzDk"
+        frameborder="0"
         height="100vh"
         width="100vw"
-        frameborder="0"
         allowfullscreen
         style={{
           pointerEvents: 'none',
-          height: '100%',
-          width: '100%'
+          position: 'relative',
+          height: '120vh',
+          width: '140vw',
+          left: '-20vw',
+          top: '-9vw'
         }}
       />
+
+      <Flex justifyContent="center">
+        <Image
+          src="/assets/images/mouse.svg"
+          position="absolute"
+          bottom="5vh"
+          zIndex="99"
+          width="1vw"
+          pointerEvents="none"
+        />
+      </Flex>
     </Box>
-    <Box height="90vh" width="100vw" />
+    <Box height="100vh" width="100vw" />
 
     <Flex
-      m="0 10vw"   
-      alignItems="center" 
+      m="0 10vw"
+      alignItems="center"
     >
       {/* <Heading
         textTransform="uppercase"
@@ -46,14 +59,14 @@ const App = () => {
         p="1%"
         color="cern-blue"
       >What is the nature of our universe?</Heading> */}
-      <Image 
-        src="/assets/images/logo-blue.svg" 
+      <Image
+        src="/assets/images/logo-blue.svg"
         width="5vw"
         p="1.5%"
       />
 
       {['About', 'News', 'Science', 'Resources'].map((text, index) => (
-        <Text 
+        <Text
           textTransform="uppercase"
           m="0 15px"
           {...(index == 0 ? {
@@ -64,7 +77,7 @@ const App = () => {
     </Flex>
 
     <Box m="5vh 20vw">
-      <Flex 
+      <Flex
         alignItems="center"
         m="10vh 0"
       >
@@ -75,8 +88,8 @@ const App = () => {
           }}>– 5 March 2021</span></Text>
         </Flex>
 
-        <Image 
-          src="/assets/images/exploring-unknown.png" 
+        <Image
+          src="/assets/images/exploring-unknown.png"
           w="18vw"
           marginLeft="auto"
         />
@@ -95,18 +108,18 @@ const App = () => {
       backgroundColor="cern-blue"
       p="3vh 0"
     >
-      <Flex 
+      <Flex
         m="2vh 0"
         justifyContent="center"
       >
-        <Image 
+        <Image
           src="/assets/images/new-logo.svg"
           w="15vw"
           m="0 5vw"
           pointerEvents="none"
         />
 
-        <Flex 
+        <Flex
           direction="column"
           m="0 2vw"
           w="15vw"
@@ -121,7 +134,7 @@ const App = () => {
           <Text color="white">– Getting here</Text>
         </Flex>
 
-        <Flex 
+        <Flex
           direction="column"
           m="0 2vw"
           w="15vw"
@@ -139,8 +152,8 @@ const App = () => {
           <Text color="white">– Partnerships</Text>
           <Text color="white">– Alumni</Text>
         </Flex>
-        
-        <Flex 
+
+        <Flex
           direction="column"
           m="0 2vw"
           w="15vw"
@@ -157,7 +170,7 @@ const App = () => {
         </Flex>
       </Flex>
 
-      <Text 
+      <Text
         textAlign="center"
         color="white"
         fontSize="0.8em"
