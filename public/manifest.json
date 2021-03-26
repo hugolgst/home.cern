@@ -3,17 +3,17 @@
   "name": "CERN, the European Organization for Nuclear Research, is one of the world's largest and most respected centres for scientific research.",
   "icons": [
     {
-      "src": "./assets/images/favicon.ico",
+      "src": "./assets/images/logos/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "./assets/images/192x192.png",
+      "src": "./assets/images/logos/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./assets/images/512x512.png",
+      "src": "./assets/images/logos/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

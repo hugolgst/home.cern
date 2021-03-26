@@ -3,7 +3,7 @@ import { Flex, Heading, Text, Box, Image } from '@chakra-ui/react'
 
 const Footer = () => {
   return <Box
-    marginTop="10vh"
+    marginTop="15vh"
     backgroundColor="cern-blue"
     p="3vh 0"
   >
@@ -20,9 +20,9 @@ const Footer = () => {
       }}
     >
       <Image
-        src="/assets/images/new-logo.svg"
+        src="/assets/images/logos/logo.svg"
         w={{
-          base: '80vw',
+          base: '30vw',
           md: '15vw'
         }}
         m={{

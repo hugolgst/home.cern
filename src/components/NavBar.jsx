@@ -77,6 +77,7 @@ const NavBar = () => {
       md: '0 10vw'
     }}
     alignItems="center"
+    id="navbar"
   >
     {/* <Heading
       textTransform="uppercase"
@@ -85,7 +86,7 @@ const NavBar = () => {
       color="cern-blue"
     >What is the nature of our universe?</Heading> */}
     <Image
-      src="/assets/images/logo-blue.svg"
+      src="/assets/images/logos/logo-blue.svg"
       width={{
         base: '15vw',
         md: '5vw'

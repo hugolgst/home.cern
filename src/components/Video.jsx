@@ -4,7 +4,7 @@ import { Flex, Box, Image } from '@chakra-ui/react'
 const Video = () => {
   return <>
     <Image
-      src="/assets/images/logo.svg"
+      src="/assets/images/logos/logo.svg"
       position="absolute"
       top="40vh"
       left="45vw"
@@ -12,7 +12,6 @@ const Video = () => {
       zIndex="99"
       pointerEvents="none"
     />
-
 
     <Box
       position="absolute"
@@ -44,11 +43,10 @@ const Video = () => {
           bottom="5vh"
           zIndex="99"
           width="1vw"
-          pointerEvents="none"
         />
       </Flex>
     </Box>
-    
+
     <Box height="100vh" width="100vw" />
   </>
 }

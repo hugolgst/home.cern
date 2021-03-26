@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Flex, Heading, Text, Box, Image, useMediaQuery, baseStyle } from '@chakra-ui/react'
+import { Flex, Heading, Text, Box, Image, useMediaQuery, baseStyle, Fade } from '@chakra-ui/react'
 import Video from './components/Video'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
@@ -107,6 +107,84 @@ const App = () => {
         >What is the nature of our universe?</Heading>
         <Image src="/assets/images/background.jpeg" />
       </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <Heading
+          marginTop="10vh"
+          marginBottom="3vh"
+          fontSize={{
+            base: '1.6em',
+            md: '3em'
+          }}
+          textTransform="uppercase"
+        >Explore CERN</Heading>
+      </FadeInWhenVisible>
+
+      <Flex 
+        gridGap="2vw"
+        direction={{
+          base: 'column',
+          lg: 'row'
+        }}
+        alignItems={{
+          base: 'center',
+          lg: 'flex-start'
+        }}
+      >
+        <FadeInWhenVisible>
+          <Flex
+            direction="column"
+            w={{
+              base: '80vw',
+              lg: '20vw'
+            }}
+          >
+            <Image
+              src="/assets/images/explore-cern-1.png"
+            />
+            <Heading
+              fontSize="1.5em"
+              m="2vh 0"
+            >Take an immersive tour of CERN's accelerators</Heading>
+          </Flex>
+        </FadeInWhenVisible>
+
+        <FadeInWhenVisible>
+          <Flex
+            direction="column"
+            w={{
+              base: '80vw',
+              lg: '20vw'
+            }}
+          >
+            <Image
+              src="/assets/images/explore-cern-2.png"
+            />
+            <Heading
+              fontSize="1.5em"
+              m="2vh 0"
+            >Visit CERN's permanent exhibitions</Heading>
+          </Flex>
+        </FadeInWhenVisible>
+
+        <FadeInWhenVisible>
+          <Flex
+            direction="column"
+            w={{
+              base: '80vw',
+              lg: '20vw'
+            }}
+          >
+            <Image
+              src="/assets/images/explore-cern-3.png"
+            />
+            <Heading
+              fontSize="1.5em"
+              m="2vh 0"
+            >Technology from CERN to society</Heading>
+          </Flex>
+        </FadeInWhenVisible>
+      </Flex>
     </Box>
 
     <Footer />
