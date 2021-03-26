@@ -26,12 +26,20 @@ const BurgerMenu = () => {
       variant="outline"
       marginLeft="auto"
       border="none"
+      _focus={{
+        border: 'none',
+        backgroundColor: 'transparent'
+      }}
     />
 
-    <MenuList>
-      {items.map(text => {
-        <MenuItem>{text}</MenuItem>
-      })}
+    <MenuList
+      borderRadius="0"
+    >
+      {items.map(text => (
+        <MenuItem 
+          textTransform="uppercase"
+        >{text}</MenuItem>
+      ))}
     </MenuList>
   </Menu>
 }
