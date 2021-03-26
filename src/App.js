@@ -1,42 +1,24 @@
 import React from 'react'
-import { Flex, Heading, Text, Box, Image } from '@chakra-ui/react'
+import { Flex, Heading, Text, Box, Image, useMediaQuery } from '@chakra-ui/react'
 import Video from './components/Video'
+import NavBar from './components/NavBar'
 
 const App = () => {
+  const [ isMobile ] = useMediaQuery("(min-width: 1280px)")
+
   return <>
-    <Video />
+    { isMobile ? <Video /> : '' }
 
-    <Flex
-      m="0 10vw"
-      alignItems="center"
-    >
-      {/* <Heading
-        textTransform="uppercase"
-        fontSize="3em"
-        p="1%"
-        color="cern-blue"
-      >What is the nature of our universe?</Heading> */}
-      <Image
-        src="/assets/images/logo-blue.svg"
-        width="5vw"
-        p="1.5%"
-      />
-
-      {['About', 'News', 'Science', 'Resources'].map((text, index) => (
-        <Text
-          textTransform="uppercase"
-          m="0 15px"
-          {...(index === 0 ? {
-            marginLeft: 'auto'
-          } : {})}
-        >{text}</Text>
-      ))}
-    </Flex>
+    <NavBar />
 
     <Box m="5vh 20vw">
       <Flex
         alignItems="center"
         m="10vh 0"
+        direction={{
+          base: 'column',
+          xl: 'row'
+        }}
       >
         <Flex direction="column">
           <Heading>Searching for the unknown</Heading>
@@ -47,7 +29,10 @@ const App = () => {
 
         <Image
           src="/assets/images/exploring-unknown.png"
-          w="18vw"
+          w={{
+            base: '70vw',
+            xl: '18vw'
+          }}
           marginLeft="auto"
         />
       </Flex>
