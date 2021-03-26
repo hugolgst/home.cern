@@ -142,7 +142,7 @@ const App = () => {
             direction="column"
             w={{
               base: '80vw',
-              lg: '20vw'
+              lg: '18.5vw'
             }}
           >
             <Image
@@ -166,7 +166,7 @@ const App = () => {
             direction="column"
             w={{
               base: '80vw',
-              lg: '20vw'
+              lg: '18.5vw'
             }}
           >
             <Image
@@ -190,7 +190,7 @@ const App = () => {
             direction="column"
             w={{
               base: '80vw',
-              lg: '20vw'
+              lg: '18.5vw'
             }}
           >
             <Image
