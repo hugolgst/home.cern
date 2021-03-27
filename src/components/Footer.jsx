@@ -19,18 +19,35 @@ const Footer = () => {
         md: 'flex-start'
       }}
     >
-      <Image
-        src="/assets/images/logos/logo.svg"
-        w={{
-          base: '30vw',
-          md: '15vw'
-        }}
-        m={{
-          base: '4vh 5vw',
-          md: '0 5vw'
-        }}
-        pointerEvents="none"
-      />
+      <Flex 
+        direction="column"
+        alignItems="center"
+      >
+        <Image
+          src="/assets/images/logos/logo.svg"
+          w={{
+            base: '8vw',
+            md: '15w'
+          }}
+          m={{
+            base: '4vh 5vw',
+            md: '0 5vw'
+          }}
+          pointerEvents="none"
+        />
+
+        <Text
+          w="10vw"
+          marginTop="4vh"
+          color="white"
+        >
+          CERN<br/>
+          Esplanade des Particules 1<br/>
+          P.O. Box<br/>
+          1211 Geneva 23<br/>
+          Switzerland
+        </Text>
+      </Flex>
 
       <Flex
         direction="column"
