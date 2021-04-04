@@ -26,7 +26,7 @@ const Footer = () => {
         <Image
           src="/assets/images/logos/logo.svg"
           w={{
-            base: '8vw',
+            base: '30vw',
             md: '15w'
           }}
           m={{
@@ -37,7 +37,10 @@ const Footer = () => {
         />
 
         <Text
-          w="10vw"
+          w={{
+            base: '70vw',
+            md: '10vw'
+          }}
           marginTop="4vh"
           color="white"
         >

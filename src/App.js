@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Flex, Heading, Text, Box, Image, useMediaQuery, baseStyle, Fade } from '@chakra-ui/react'
+import { Flex, Heading, Text, Box, Image, useMediaQuery } from '@chakra-ui/react'
 import Video from './components/Video'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
@@ -111,7 +111,7 @@ const App = () => {
           }}
           m="2vh 0"
         >What is the nature of our universe?</Heading>
-        <Image src="/assets/images/background.jpeg" />
+        <Image src="/assets/images/background.jpeg" w="100%" />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
